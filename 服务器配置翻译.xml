@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<ServerSettings>
+    <!-- 服务器信息 -->
+    <property name="ServerName" value="My Game Host"/>
+    <!-- 你想要的服务器名称。 -->
+
+    <property name="ServerDescription" value="A 7 Days to Die server"/>
+    <!-- 你想要的服务器描述，将在服务器浏览器中显示。 -->
+
+    <property name="ServerWebsiteURL" value=""/>
+    <!-- 服务器的网站URL，将在服务器浏览器中作为可点击链接显示 -->
+
+    <property name="ServerPassword" value=""/>
+    <!-- 进入服务器所需要的密码 -->
+
+    <property name="ServerLoginConfirmationText" value=""/>
+    <!-- 如果设置，用户在加入服务器时将看到此消息，并在继续前需要确认。如需对此窗口进行更复杂的更改，可以在XUi中更改"serverjoinrulesdialog"窗口 -->
+
+    <property name="Region" value="NorthAmericaEast"/>
+    <!-- 服务器所在的区域。可选值：NorthAmericaEast, NorthAmericaWest, CentralAmerica, SouthAmerica, Europe, Russia, Asia, MiddleEast, Africa, Oceania -->
+
+    <property name="Language" value="Chinese"/>
+    <!-- 服务器玩家的主要语言。可选值：使用任何你期望用户搜索的语言名称。应使用语言的英文名，例如不是"Deutsch"而是"German" -->
+
+    <!-- 网络 -->
+    <property name="ServerPort" value="26900"/>
+    <!-- 服务器监听的端口。如果希望同一局域网内的PC能将其找到作为局域网服务器，请将其保持在26900至26905或27015至27020的范围内。 -->
+
+    <property name="ServerVisibility" value="2"/>
+    <!-- 服务器的可见性：2 = 公开，1 = 只向朋友展示，0 = 不列出。由于你永远不会成为专用服务器的朋友，所以将此设置为“1”只会在第一个玩家通过IP手动连接时起作用。 -->
+
+    <property name="ServerDisabledNetworkProtocols" value="SteamNetworking"/>
+    <!-- 应禁用的网络协议，用逗号分隔。可能的值：LiteNetLib, SteamNetworking。如果你的用户和服务器之间没有NAT路由器，或者端口转发设置正确，那么专用服务器应禁用SteamNetworking -->
+
+    <property name="ServerMaxWorldTransferSpeedKiBs" value="512"/>
+    <!-- 客户端首次连接并没有世界数据时，世界数据传输到客户端的最大（！）速度，单位为kiB/s。即使你设置了更高的值，最大速度也大约是1300 kiB/s。 -->
+
+
+    <!-- 玩家数量 -->
+    <property name="ServerMaxPlayerCount" value="8"/>
+    <!-- 最大并发玩家数量 -->
+
+    <property name="ServerReservedSlots" value="0"/>
+    <!-- 在最大玩家数量中，这么多插槽只能被具有特定权限级别的玩家使用 -->
+
+    <property name="ServerReservedSlotsPermission" value="100"/>
+    <!-- 使用上述保留插槽所需的权限级别 -->
+
+    <property name="ServerAdminSlots" value="0"/>
+    <!-- 即使服务器达到了最大玩家数量，仍然可以有这么多的管理员加入 -->
+
+    <property name="ServerAdminSlotsPermission" value="0"/>
+    <!-- 使用上述管理员插槽所需的权限级别 -->
+
+
+    <!-- 管理界面 -->
+    <property name="WebDashboardEnabled" value="false"/>
+    <!-- 启用/禁用网页仪表盘 -->
+
+    <property name="WebDashboardPort" value="8080"/>
+    <!-- 网页仪表盘的端口 -->
+
+    <property name="WebDashboardUrl" value=""/>
+    <!-- 如果不仅仅使用服务器的公共IP，到网页仪表盘的外部URL，例如，如果网页仪表盘位于反向代理之后。需要是完整的URL，如"https://domainOfReverseProxy.tld:1234/"。如果直接使用公共IP和仪表盘端口，可以留空 -->
+
+    <property name="EnableMapRendering" value="false"/>
+    <!-- 启用/禁用在探索过程中将地图渲染到瓦片图像。这被用于例如网页仪表盘显示地图视图。 -->
+
+
+    <property name="TelnetEnabled" value="true"/>
+    <!-- 启用/禁用Telnet -->
+
+    <property name="TelnetPort" value="8081"/>
+    <!-- Telnet服务器的端口 -->
+
+    <property name="TelnetPassword" value=""/>
+    <!-- 用于访问Telnet界面的密码。如果没有设置密码，服务器将只在本地环回接口上监听 -->
+
+    <property name="TelnetFailedLoginLimit" value="10"/>
+    <!-- 单个远程客户端输入错误密码达到此数量后，将阻止该客户端连接到Telnet接口 -->
+
+    <property name="TelnetFailedLoginsBlocktime" value="10"/>
+    <!-- 阻止持续的时间（以秒为单位） -->
+
+
+    <property name="TerminalWindowEnabled" value="true"/>
+    <!-- 显示一个用于日志输出/命令输入的终端窗口（仅限Windows）-->
+
+
+    <!-- 文件位置 -->
+    <property name="AdminFileName" value="serveradmin.xml"/>
+    <!-- 服务器管理员文件名。相对于SaveGameFolder的路径 -->
+
+    <property name="UserDataFolder" value="absolute path"/>
+    <!-- 使用此项来覆盖服务器存储所有生成数据的位置，包括由RWG生成的世界。别忘了取消注释该条目！ -->
+
+    <property name="SaveGameFolder" value="absolute path"/>
+    <!-- 使用此项只覆盖保存游戏的路径。别忘了取消注释该条目！ -->
+
+
+    <!-- 其他 -->
+    <property name="EACEnabled" value="true"/>
+    <!-- 启用/禁用 EasyAntiCheat -->
+
+    <property name="HideCommandExecutionLog" value="0"/>
+    <!-- 隐藏命令执行日志。0 = 显示所有内容，1 = 仅隐藏来自Telnet/控制面板，2 = 也隐藏来自远程游戏客户端，3 = 隐藏所有内容 -->
+
+    <property name="MaxUncoveredMapChunksPerPlayer" value="131072"/>
+    <!-- 覆盖每个玩家可以在游戏地图上揭示的区块数量。每个玩家的最大地图文件大小限制为 (x * 512 字节)，揭示的区域为 (x * 256 m²)。默认值131072意味着任何时候最多可以揭示32平方千米 -->
+
+    <property name="PersistentPlayerProfiles" value="false"/>
+    <!-- 如果禁用，玩家可以用任何选择的配置文件加入。如果启用，他们将用上次加入时的配置文件加入 -->
+
+
+    <!-- 世界 -->
+	<property name="GameWorld"						value="Navezgane"/>
+	<!-- "RWG"（参见下面的WorldGenSeed和WorldGenSize选项）或者Worlds文件夹中已经存在的世界名（当前附带例如"Navezgane", "PREGEN01", ...）-->
+
+	<property name="WorldGenSeed"					value="asdf"/>
+	<!-- 如果为RWG，这是新世界生成的种子。如果一个具有结果名的世界已经存在，它将直接加载 -->
+
+	<property name="WorldGenSize"					value="6144"/>
+	<!-- 如果为RWG，这控制了创建的世界的宽度和高度。官方支持的大小在6144和10240之间，并且必须是2048的倍数，例如6144，8192，10240。 -->
+
+	<property name="GameName"						value="My Game"/>
+	<!-- 你想要的游戏名。这会影响保存游戏的名称以及在世界中放置装饰（树等）时使用的种子。它并不控制如果创建一个RWG世界的通用布局 -->
+
+	<property name="GameMode"						value="GameModeSurvival"/>
+	<!-- 游戏模式：生存 -->
+
+
+
+    <!-- 难度 -->
+    <property name="GameDifficulty" value="1"/>
+    <!-- 0 - 5，0=最简单，5=最困难 -->
+
+    <property name="BlockDamagePlayer" value="100"/>
+    <!-- 玩家对方块的伤害（以整数表示的百分比） -->
+
+    <property name="BlockDamageAI" value="100"/>
+    <!-- AI对方块的伤害（以整数表示的百分比） -->
+
+    <property name="BlockDamageAIBM" value="100"/>
+    <!-- 血月期间AI对方块的伤害（以整数表示的百分比） -->
+
+    <property name="XPMultiplier" value="100"/>
+    <!-- 经验值获取乘数（以整数表示的百分比） -->
+
+    <property name="PlayerSafeZoneLevel" value="5"/>
+    <!-- 如果玩家的等级小于或等于这个值，他会在生成时创建一个安全区（没有敌人） -->
+
+    <property name="PlayerSafeZoneHours" value="5"/>
+    <!-- 安全区存在的世界时间小时数 -->
+
+
+    <property name="BuildCreate" value="false"/>
+    <!-- 是否开启作弊模式 -->
+
+    <property name="DayNightLength" value="60"/>
+    <!-- 游戏内每天的实际时间（以分钟计算）：60分钟 -->
+
+    <property name="DayLightLength" value="18"/>
+    <!-- 游戏内每天阳光照射的时间（以小时计算）：18小时 -->
+
+    <property name="DropOnDeath" value="1"/>
+    <!-- 死亡时物品掉落设置：0 = 无掉落，1 = 所有物品，2 = 工具栏物品，3 = 背包物品，4 = 删除所有物品 -->
+
+    <property name="DropOnQuit" value="0"/>
+    <!-- 退出游戏时物品掉落设置：0 = 无掉落，1 = 所有物品，2 = 工具栏物品，3 = 背包物品 -->
+
+    <property name="BedrollDeadZoneSize" value="15"/>
+    <!-- 床的死亡区域的大小（以盒状半径表示，因此每边长度为给定值的两倍）；在该区域内不会生成僵尸，并且与床的死亡区域相接触的任何已清理的休眠区域不会再次生成僵尸。 -->
+
+    <property name="BedrollExpiryTime" value="45"/>
+    <!-- 床在所有者最后一次上线后保持活跃的现实世界天数。 -->
+
+
+    <!-- 性能 -->
+    <property name="MaxSpawnedZombies" value="64"/>
+    <!-- 这个设置覆盖整张地图。在地图上一次只能有这么多的僵尸。改变这个设置会对性能产生巨大影响。 -->
+
+    <property name="MaxSpawnedAnimals" value="50"/>
+    <!-- 如果你的服务器有大量的玩家，你可以增加这个限制来添加更多的野生动物。动物不像僵尸那样消耗大量的CPU。注意：这并不会随意导致更多的动物生成：生物群落生成系统只在给定的区域内生成一定数量的动物，但如果你有很多分散的玩家，那么你可能会达到限制并可以增加它。 -->
+
+    <property name="ServerMaxAllowedViewDistance" value="12"/>
+    <!-- 客户端可以请求的最大视距（6 - 12）。对内存使用和性能影响大。 -->
+
+    <property name="MaxQueuedMeshLayers" value="1000"/>
+    <!-- 在网格生成过程中可以排队的最大区块网格层的数量。减少这个值可以改善内存使用，但可能会增加区块生成的时间 -->
+
+    <property name="SaveDataLimit" value="-1"/>
+    <!-- 每个保存游戏的最大磁盘空间配额，以兆字节(MB)为单位。当达到这个限制时，保存的区块可能会被强制重置为它们的原始状态以释放空间。负值禁用该限制。 -->
+
+
+    <property name="DynamicMeshEnabled" value="true"/>
+    <!-- 是否启用动态网格系统 -->
+
+    <property name="DynamicMeshLandClaimOnly" value="true"/>
+    <!-- 动态网格系统是否仅在玩家的领地权（LCB）区域内激活 -->
+
+    <property name="DynamicMeshLandClaimBuffer" value="3"/>
+    <!-- 动态网格的领地权（LCB）区块半径 -->
+
+    <property name="DynamicMeshMaxItemCache" value="3"/>
+    <!-- 同时可以处理的项目数量，较高的值将使用更多的RAM -->
+
+
+    <!-- 丧尸 -->
+    <property name="EnemySpawnMode" value="true"/>
+    <!-- 启用/禁用敌人（丧尸）生成 -->
+
+    <property name="EnemyDifficulty" value="0"/>
+    <!-- 0 = 正常, 1 = 疯狂 -->
+
+    <property name="ZombieFeralSense" value="0"/>
+    <!-- 0-3 (关闭, 白天, 夜晚, 全部时间) -->
+
+    <property name="ZombieMove" value="0"/>
+    <!-- 0-4 (走, 慢跑, 跑, 冲刺, 噩梦) -->
+
+    <property name="ZombieMoveNight" value="3"/>
+    <!-- 0-4 (走, 慢跑, 跑, 冲刺, 噩梦) -->
+
+    <property name="ZombieFeralMove" value="3"/>
+    <!-- 0-4 (走, 慢跑, 跑, 冲刺, 噩梦) -->
+
+    <property name="ZombieBMMove" value="3"/>
+    <!-- 0-4 (走, 慢跑, 跑, 冲刺, 噩梦) -->
+
+    <property name="BloodMoonFrequency" value="7"/>
+    <!-- 血月出现的频率（以天数计）。设置为 "0" 就不会有血月 -->
+
+    <property name="BloodMoonRange" value="0"/>
+    <!-- 实际的血月日期可以从上述设置随机偏离的天数。将此设置为 0 会使血月在每 N 天（如在BloodMoonFrequency中指定）准确发生 -->
+
+    <property name="BloodMoonWarning" value="8"/>
+    <!-- 在血月之日，红色日期开始的小时数。将此设置为 -1 会使红色永不显示。  -->
+
+    <property name="BloodMoonEnemyCount" value="8"/>
+    <!-- 在血月的兽群中，这是每个玩家同时可以存活（同时生成）的丧尸数量，但是在多人游戏中，MaxSpawnedZombies 会覆盖这个数字。还要注意，你的游戏阶段设置了每个队伍的丧尸数量上限。低游戏阶段值可能会导致丧尸数量低于BloodMoonEnemyCount的设置。改变这个设置会对性能产生巨大影响。-->
+
+
+    <!-- 空投 -->
+    <property name="LootAbundance" value="100"/>
+    <!-- 财宝丰度，百分比形式 -->
+
+    <property name="LootRespawnDays" value="7"/>
+    <!-- 财宝重生天数，整数形式 -->
+
+    <property name="AirDropFrequency" value="72"/>
+    <!-- 空投发生的频率，以游戏小时计，0 表示从不 -->
+
+    <property name="AirDropMarker" value="true"/>
+    <!-- 设置是否在地图/罗盘上为空投添加标记 -->
+
+
+    <!-- 多人 -->
+    <property name="PartySharedKillRange" value="100"/>
+    <!-- 获得队伍共享击杀经验和完成队伍击杀任务所需的距离。 -->
+
+    <property name="PlayerKillingMode" value="3"/>
+    <!-- 玩家杀戮设置 (0 = 不允许杀戮，1 = 只能杀戮队友，2 = 只能杀戮陌生人，3 = 可以杀戮任何人) -->
+
+
+    <!-- 领地设置 -->
+    <property name="LandClaimCount" value="3"/>
+    <!-- 每位玩家允许的最大领地数量。 -->
+
+    <property name="LandClaimSize" value="41"/>
+    <!-- 地标保护区的大小（以方块为单位）。 -->
+
+    <property name="LandClaimDeadZone" value="30"/>
+    <!-- 地标之间必须保持这个距离（除非你和其他玩家是朋友）。 -->
+
+    <property name="LandClaimExpiryTime" value="7"/>
+    <!-- 玩家离线后领地过期并丧失保护的现实世界天数。 -->
+
+    <property name="LandClaimDecayMode" value="0"/>
+    <!-- 控制离线玩家领地的衰退方式。0=慢速（线性），1=快速（指数），2=无（完全保护，直到领地过期）。 -->
+
+    <property name="LandClaimOnlineDurabilityModifier" value="4"/>
+    <!-- 玩家在线时，保护领地区域方块硬度的增加倍数。0表示无限（永远不会受到伤害）。默认为4倍。 -->
+
+    <property name="LandClaimOfflineDurabilityModifier" value="4"/>
+    <!-- 玩家离线时，保护领地区域方块硬度的增加倍数。0表示无限（永远不会受到伤害）。默认为4倍。 -->
+
+    <property name="LandClaimOfflineDelay" value="0"/>
+    <!-- 玩家退出游戏后，领地区域的硬度从在线转变为离线的分钟数。默认为0。 -->
+
+    <property name="MaxChunkAge" value="-1"/>
+    <!-- 访问区块后必须经过多少天的游戏时间，如果没有重新访问或者保护（例如，通过近距离的领地标志或睡袋），它才会重置到原始状态。 -->
+
+
+    <!-- Twitch直播 -->
+    <property name="TwitchServerPermission" value="90"/>
+    <!-- 使用服务器上的Twitch集成所需的权限级别 -->
+
+    <property name="TwitchBloodMoonAllowed" value="false"/>
+    <!-- 服务器是否允许在血月期间进行Twitch操作。这可能会因在血月期间生成额外的僵尸而导致服务器延迟。 -->
+
+
+</ServerSettings>
