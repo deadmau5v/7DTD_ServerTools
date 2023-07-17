@@ -113,21 +113,20 @@
 
 
     <!-- 世界 -->
-	<property name="GameWorld"						value="Navezgane"/>
-	<!-- "RWG"（参见下面的WorldGenSeed和WorldGenSize选项）或者Worlds文件夹中已经存在的世界名（当前附带例如"Navezgane", "PREGEN01", ...）-->
+    <property name="GameWorld" value="Navezgane"/>
+    <!-- "RWG"（参见下面的WorldGenSeed和WorldGenSize选项）或者Worlds文件夹中已经存在的世界名（当前附带例如"Navezgane", "PREGEN01", ...）-->
 
-	<property name="WorldGenSeed"					value="asdf"/>
-	<!-- 如果为RWG，这是新世界生成的种子。如果一个具有结果名的世界已经存在，它将直接加载 -->
+    <property name="WorldGenSeed" value="asdf"/>
+    <!-- 如果为RWG，这是新世界生成的种子。如果一个具有结果名的世界已经存在，它将直接加载 -->
 
-	<property name="WorldGenSize"					value="6144"/>
-	<!-- 如果为RWG，这控制了创建的世界的宽度和高度。官方支持的大小在6144和10240之间，并且必须是2048的倍数，例如6144，8192，10240。 -->
+    <property name="WorldGenSize" value="6144"/>
+    <!-- 如果为RWG，这控制了创建的世界的宽度和高度。官方支持的大小在6144和10240之间，并且必须是2048的倍数，例如6144，8192，10240。 -->
 
-	<property name="GameName"						value="My Game"/>
-	<!-- 你想要的游戏名。这会影响保存游戏的名称以及在世界中放置装饰（树等）时使用的种子。它并不控制如果创建一个RWG世界的通用布局 -->
+    <property name="GameName" value="My Game"/>
+    <!-- 你想要的游戏名。这会影响保存游戏的名称以及在世界中放置装饰（树等）时使用的种子。它并不控制如果创建一个RWG世界的通用布局 -->
 
-	<property name="GameMode"						value="GameModeSurvival"/>
-	<!-- 游戏模式：生存 -->
-
+    <property name="GameMode" value="GameModeSurvival"/>
+    <!-- 游戏模式：生存 -->
 
 
     <!-- 难度 -->
