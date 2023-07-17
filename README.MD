@@ -15,7 +15,9 @@
 </p>
 
 [//]: # (功能)
+
 ### 开发代办
+
 - [ ] 可视化界面
 - [ ] 服务器配置
 - [ ] 多服务器支持
@@ -23,6 +25,7 @@
 - [ ] 插件
 
 [//]: # (通讯地址)
+
 ### 加入讨论
 
 Telegram: [@7DaysToDie-ServerTools](https://t.me/+wMUBqnqWg6MzMGU9) <br>
