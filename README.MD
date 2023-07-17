@@ -1,8 +1,6 @@
-![LOGO](./设计素材/logo.png)
+![LOGO](images/logo.png)
 
 # 七日杀服务器工具
-
----
 
 [![Python 3](https://img.shields.io/badge/Python-3.x-blue.svg)]()
 [![Qt](https://img.shields.io/badge/Qt-5-blue.svg)]()
