@@ -1,6 +1,5 @@
 import json
 import os
-import time
 from xml.dom.minidom import Element
 from xml.dom.minidom import parse
 
@@ -87,4 +86,3 @@ class ServerList:
         # 删除文件夹
         os.system("rm -rf " + path)
         return True, "删除成功"
-
